@@ -1,9 +1,12 @@
 public class TryBlock{
-	public static void main(Strings Args[])
-				{
-				try{
-					int result = 10/0;
-				}	
-				catch(ArthematicException e){
-				System.out.println("
-			
+public static void main (String args[])
+{
+try {
+    // Code that may throw an exception
+    int result = 10 / 0; // This will throw an ArithmeticException
+} catch (ArithmeticException e) {
+    // Handling the exception
+    System.out.println("An arithmetic exception occurred: " + e.getMessage());
+}
+}
+}
